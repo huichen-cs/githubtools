@@ -8,7 +8,7 @@ ORG=$1
 PROJECTPREFIX=$2
 
 SCRIPTPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if [ -f githuboauth_gitignored.sh ]; then
+if [ -f ${SCRIPTPATH}/githuboauth_gitignored.sh ]; then
     . ${SCRIPTPATH}/githuboauth_gitignored.sh
 else
     . ${SCRIPTPATH}/githuboauth.sh
